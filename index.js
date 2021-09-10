@@ -25,6 +25,12 @@ io.on("connection", (socket) => {
       message: data,
     });
   });
+  
+  zócalo . on ( "asistente" ,  ( )  =>  {
+    zócalo . difusión . emit ( "asistiendo" ,  {
+      nombre de usuario : socket . nombre de usuario ,
+    } ) ;
+
 
   socket.on("add user", (username) => {
     if (addedUser) return;
